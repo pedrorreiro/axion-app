@@ -1,14 +1,30 @@
 @font-face {
-  font-family: 'Open Sans';
-  src: url("https://fonts.google.com/specimen/Open+Sans");
+  font-family: 'Open Sans Light';
+  src: url('./fonts/OpenSans-Light.ttf');
 }
+
+@font-face {
+  font-family: 'Open Sans Medium';
+  src: url('./fonts/OpenSans-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Open Sans SemiBold';
+  src: url('./fonts/OpenSans-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url('./fonts/OpenSans-Bold.ttf');
+}
+
 
 .App {
 }
 
 html {
   background-color: #f9f9f9;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans Medium', sans-serif;
 }
 
 .App-header {
@@ -60,7 +76,8 @@ html {
   width: 100%;
   background-color: white;
   padding: 25px;
-  font-size: 1em;
+  font-size: 1.2em;
+  font-family: 'Open Sans Light';
   color: #4a4a4a;
   border: 0;
   box-sizing: border-box;
@@ -74,6 +91,7 @@ input::placeholder{
   background: rgb(174,35,169);
   background: linear-gradient(90deg, rgba(174,35,169,1) 0%, rgba(220,78,27,1) 100%);
   box-sizing: border-box;
+  font-family: 'Open Sans Medium';
   color: white;
   padding: 20px 15px;
   font-size: 1em;
@@ -105,6 +123,7 @@ input::placeholder{
 #check{
   display: flex;
   margin: 20px 0;
+  align-items: center;
   font-weight: lighter;
 }
 
@@ -121,11 +140,12 @@ input::placeholder{
 #problemas{
   font-size: 0.9em;
  font-weight: normal;
+ font-family: "Open Sans Light";
 }
 
 #cadastrar{
   font-size: 0.9em;
-  font-weight: normal;
+  font-family: 'Open Sans SemiBold';
   color: #4a4a4a;
   border: 1px solid #9B9B9B;
   font-weight: 600;
@@ -139,8 +159,9 @@ input::placeholder{
 }
 
 p:last-child{
-  font-size: 0.8em;
-  color: #4a4a4a;
+  font-size: 0.9em;
+  color: #9B9B9B;
+  font-family: 'Open Sans Light';
 }
 
 
