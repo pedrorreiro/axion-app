@@ -36,6 +36,7 @@ function Login() {
         })
         .catch(function (error) {
             console.log(error);
+            alert("Erro no login");
         });
     }
 

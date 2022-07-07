@@ -1,187 +1,290 @@
 @font-face {
-  font-family: 'Open Sans Light';
-  src: url('./fonts/OpenSans-Light.ttf');
+    font-family: 'Open Sans Light';
+    src: url('./fonts/OpenSans-Light.ttf');
 }
 
 @font-face {
-  font-family: 'Open Sans Medium';
-  src: url('./fonts/OpenSans-Medium.ttf');
+    font-family: 'Open Sans Medium';
+    src: url('./fonts/OpenSans-Medium.ttf');
 }
 
 @font-face {
-  font-family: 'Open Sans SemiBold';
-  src: url('./fonts/OpenSans-SemiBold.ttf');
+    font-family: 'Open Sans SemiBold';
+    src: url('./fonts/OpenSans-SemiBold.ttf');
 }
 
 @font-face {
-  font-family: 'Open Sans Bold';
-  src: url('./fonts/OpenSans-Bold.ttf');
+    font-family: 'Open Sans Bold';
+    src: url('./fonts/OpenSans-Bold.ttf');
 }
 
 
-.App {
-}
+.App {}
 
 html {
-  background-color: #f9f9f9;
-  font-family: 'Open Sans Medium', sans-serif;
+    background-color: #f9f9f9;
+    font-family: 'Open Sans Medium', sans-serif;
 }
 
-.App-header {
-  background-color: blue;
+#logo {
+    width: 300px;
+    height: 40px;
 }
 
-#fundo{
-  width: 60%;
-  z-index: -1000;
-  right: 0;
-  top: 25vh;
-  position: absolute;
+#fundo {
+    width: 60%;
+    z-index: -1000;
+    right: 0;
+    top: 25vh;
+    position: absolute;
 }
 
-#loginBox{
-  background-color: #ffffff;
-  padding: 20px 40px;
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  color: #4a4a4a;
-  margin: 60px 0;
-  margin-left: 10%;
-  left: 10%;
-  font-size: 1.4em;
-  font-weight: 500;
-  z-index: 1000;
-  box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.1);
+#loginBox {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    color: #4a4a4a;
+    margin: 60px 0;
+    margin-left: 10%;
+    left: 10%;
+    font-size: 1.4em;
+    font-weight: 500;
+    z-index: 1000;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
 }
 
-#loginBox img:first-child{
-  width: 300px;
-  margin-top: 20px;
-  margin-bottom: 50px;
+#loginBox img:first-child {
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
-.input{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: white;
-  font-size: 0.8em;
-  border: 2px solid #4a4a4a;
-  box-sizing: border-box;
+.input {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    font-size: 0.8em;
+    border: 2px solid #4a4a4a;
+    box-sizing: border-box;
 }
 
-#loginBox input[type="text"], #loginBox input[type="password"]{
-  width: 100%;
-  background-color: white;
-  padding: 25px;
-  font-size: 1.2em;
-  font-family: 'Open Sans Light';
-  color: #4a4a4a;
-  border: 0;
-  box-sizing: border-box;
+header {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 15%;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.15);
+    align-items: center;
+
 }
 
-input::placeholder{
-  color: #9B9B9B;
+#lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15%;
+    box-sizing: border-box;
+}
+
+.itemLista {
+    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.19);
+    height: 380px;
+    margin-bottom: 40px;
+    
+}
+
+#titulo {
+    padding: 0 15%;
+    margin-top: 40px;
+    font-size: 1.5em;
+    font-family: 'Open Sans Bold';
+}
+
+#titulo p{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#titulo div{
+    margin-bottom: 60px;
+}
+
+a:active{
+    color: blue;
+    
+}
+
+#faixa {
+    height: 8px;
+    width: 100%;
+    background: rgb(174, 35, 169);
+    background: linear-gradient(90deg, rgba(174, 35, 169, 1) 0%, rgba(220, 78, 27, 1) 100%);
+}
+
+.itemLista:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    opacity: 0.9;
+    filter: brightness(0.85);
+}
+
+.itemLista:active {
+    transform: scale(1);
+}
+
+.itemLista img {
+    height: 380px;
+    width: 420px;
+}
+
+.itemLista p {
+    position: relative;
+    bottom: 90px;
+    left: 20px;
+    font-size: 1.7em;
+    font-family: 'Open Sans Bold';
+    color: white;
+}
+
+#loginBox input[type="text"],
+#loginBox input[type="password"] {
+    width: 100%;
+    background-color: white;
+    padding: 25px;
+    font-size: 1.2em;
+    font-family: 'Open Sans Light';
+    color: #4a4a4a;
+    border: 0;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #9B9B9B;
 }
 
 #button {
-  background: rgb(174,35,169);
-  background: linear-gradient(90deg, rgba(174,35,169,1) 0%, rgba(220,78,27,1) 100%);
-  box-sizing: border-box;
-  font-family: 'Open Sans Medium';
-  color: white;
-  padding: 20px 15px;
-  font-size: 1em;
-  border: 0;
-  text-align: center;
-  width: 100%;
-  margin-top: 20px;
+    background: rgb(174, 35, 169);
+    background: linear-gradient(90deg, rgba(174, 35, 169, 1) 0%, rgba(220, 78, 27, 1) 100%);
+    box-sizing: border-box;
+    font-family: 'Open Sans Medium';
+    color: white;
+    padding: 20px 15px;
+    font-size: 1em;
+    border: 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
 }
 
-#or{
-  margin: 40px 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  font-weight: 100;
+#or {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 100;
 }
 
-.linha{
-  height: 2px;
-  background-color: #9B9B9B;
-  width: 40%;
+.linha {
+    height: 2px;
+    background-color: #9B9B9B;
+    width: 40%;
 }
 
-#button:hover{
-  cursor: pointer;
+#button:hover {
+    cursor: pointer;
 }
 
-#check{
-  display: flex;
-  margin: 20px 0;
-  align-items: center;
-  font-weight: lighter;
+#check {
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    font-weight: lighter;
 }
 
-#check input[type="checkbox"]{
-  width: 20px;
-  height: 20px;
-  margin: 0;
+#check input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 0;
 }
 
-#loginBox div input[type="checkbox"]:checked{
-  accent-color: #4a4a4a;
+#loginBox div input[type="checkbox"]:checked {
+    accent-color: #4a4a4a;
 }
 
-#problemas{
-  font-size: 0.9em;
- font-weight: normal;
- font-family: "Open Sans Light";
+#problemas {
+    font-size: 0.9em;
+    font-weight: normal;
+    font-family: "Open Sans Light";
 }
 
-#cadastrar{
-  font-size: 0.9em;
-  font-family: 'Open Sans SemiBold';
-  color: #4a4a4a;
-  border: 1px solid #9B9B9B;
-  font-weight: 600;
-  padding: 20px;
-  text-align: center;
-  margin-bottom: 10px;
+#cadastrar {
+    font-size: 0.9em;
+    font-family: 'Open Sans SemiBold';
+    color: #4a4a4a;
+    border: 1px solid #9B9B9B;
+    font-weight: 600;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-#cadastrar:hover{
-  cursor: pointer;
+#cadastrar:hover {
+    cursor: pointer;
 }
 
-p:last-child{
-  font-size: 0.9em;
-  color: #9B9B9B;
-  font-family: 'Open Sans Light';
+#loginBox p:last-child {
+    font-size: 0.9em;
+    color: #9B9B9B;
+    font-family: 'Open Sans Light';
 }
 
 
-#loginBox div label{
-  font-size: 0.8em;
-  margin-left: 8px;
+#loginBox div label {
+    font-size: 0.8em;
+    margin-left: 8px;
 }
 
-#loginBox input:focus{
-  outline: none;
+#loginBox input:focus {
+    outline: none;
 }
 
 .iconInput {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-  margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .iconInput:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
+#options {
+    display: flex;
+    width: 40%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#options span {
+    font-size: 1.5em;
+    font-family: 'Open Sans Light';
+    color: #4a4a4a;
+    margin-left: 10px;
+}
+
+.paginaAtual{
+    font-family: 'Open Sans Bold' !important;
+}
+
+#options span:hover{
+    cursor: pointer;
+}
