@@ -18,9 +18,6 @@
     src: url('./fonts/OpenSans-Bold.ttf');
 }
 
-
-.App {}
-
 html {
     background-color: #f9f9f9;
     font-family: 'Open Sans Medium', sans-serif;
@@ -72,6 +69,10 @@ html {
     box-sizing: border-box;
 }
 
+#erro{
+    margin-top: 20px;
+}
+
 header {
     box-sizing: border-box;
     width: 100%;
@@ -92,11 +93,22 @@ header {
     box-sizing: border-box;
 }
 
+
+@keyframes surgir {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
 .itemLista {
-    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.19);
-    height: 380px;
+    box-shadow: 0px 0px 9px 1px rgb(0 0 0 / 19%);
     margin-bottom: 40px;
-    
+    animation: surgir 0.5s ease-in-out;
+
 }
 
 #titulo {
@@ -106,22 +118,22 @@ header {
     font-family: 'Open Sans Bold';
 }
 
-#titulo p{
+#titulo p {
     margin: 0;
     margin-bottom: 10px;
 }
 
-#titulo div{
+#faixa {
     margin-bottom: 60px;
 }
 
-a:active{
+a:active {
     color: blue;
-    
+
 }
 
 #faixa {
-    height: 8px;
+    height: 6px;
     width: 100%;
     background: rgb(174, 35, 169);
     background: linear-gradient(90deg, rgba(174, 35, 169, 1) 0%, rgba(220, 78, 27, 1) 100%);
@@ -138,18 +150,21 @@ a:active{
     transform: scale(1);
 }
 
+.itemLista,
 .itemLista img {
     height: 380px;
-    width: 420px;
+    min-width: 420px;
+    max-width: 420px;
 }
 
-.itemLista p {
+.itemLista span {
     position: relative;
-    bottom: 90px;
+    bottom: 75px;
     left: 20px;
     font-size: 1.7em;
     font-family: 'Open Sans Bold';
     color: white;
+    display: inline-block;
 }
 
 #loginBox input[type="text"],
@@ -224,6 +239,10 @@ input::placeholder {
     font-family: "Open Sans Light";
 }
 
+#problemas:hover{
+    cursor: pointer;
+}
+
 #cadastrar {
     font-size: 0.9em;
     font-family: 'Open Sans SemiBold';
@@ -268,7 +287,7 @@ input::placeholder {
 
 #options {
     display: flex;
-    width: 40%;
+    width: 35%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -281,10 +300,103 @@ input::placeholder {
     margin-left: 10px;
 }
 
-.paginaAtual{
+.paginaAtual {
     font-family: 'Open Sans Bold' !important;
 }
 
-#options span:hover{
+#options span:hover {
     cursor: pointer;
+    color: #888585 !important;
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 1200px) {
+
+    #loginBox {
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+        box-shadow: none;
+        font-size: 1em;
+    }
+
+    #titulo {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    #fundo {
+        display: none;
+    }
+
+    #loginBox img:first-child {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    #options {
+        width: 100%;
+    }
+
+    .op {
+        margin: 0 !important;
+    }
+
+    #options span {
+        font-size: 1.3em;
+    }
+
+    #logo {
+        margin-bottom: 65px;
+    }
+
+    #lista {
+        padding: 10px
+    }
+
+    .itemLista img {
+        width: 100%;
+        height: 360px;
+    }
+
+    .itemLista {
+        width: 100%;
+        height: 360px;
+    }
+
+    #faixa {
+        margin-bottom: 20px;
+    }
+
+    
+    .itemLista,
+    .itemLista img {
+        height: 380px;
+        min-width: auto;
+        max-width: auto;
+    }
+
+
+}
+
+@media only screen and (max-width: 425px) {
+    header {
+        padding: 25px 10%;
+    }
+
+    #options span {
+        font-size: 1em;
+    }
+
+    .itemLista,
+    .itemLista img {
+        height: 330px;
+    }
+
+    .itemLista {
+        margin-bottom: 20px;
+    }
 }
