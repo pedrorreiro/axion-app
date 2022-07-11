@@ -11,3 +11,9 @@ Após isso, clone este projeto, abra o terminal na pasta e execute os seguintes 
 
     E-mail: pedro@gmail.com
     Senha: pedro123
+
+Obs: Adicionei mensagem de erro caso:
+
+* E-mail ou senha incorretos
+* Erro de conexão / servidor desligado
+* Campos vazios
